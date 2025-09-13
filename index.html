@@ -1,134 +1,126 @@
----
-layout: default
-title: "Ali's homepage"
----
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali's homepage</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ali’s homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Shabnam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css?v=02673009392896683665e07fd455af09372b8c4b">
+    <script src="/assets/js/scale.fix.js"></script>
 
-  <style>
-    body {
-      font-family: 'Vazirmatn', 'Shabnam', Tahoma, sans-serif;
-      margin: 20px;
-      line-height: 1.8;
-      background-color: #f8f9fa;
-      color: #222;
-      animation: fadeIn 2s ease-in-out;
-    }
+    <!-- فونت فارسی -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css"/>
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    <style>
+      body {
+        font-family: 'Vazirmatn', Tahoma, sans-serif;
+        margin: 20px;
+        line-height: 1.8;
+        background-color: #f8f9fa;
+        color: #222;
+      }
 
-    h1, h2, h3, h4, h5 {
-      font-family: 'Shabnam', 'Vazirmatn', Tahoma, sans-serif;
-      color: #333;
-    }
+      h1, h2, h3, h4, h5 {
+        font-family: 'Vazirmatn', Tahoma, sans-serif;
+        color: #333;
+      }
 
-    /* فقط هدر اصلی انگلیسی LTR */
-    h1.header-ltr {
-      direction: ltr;
-      text-align: left;
-      font-family: Tahoma, sans-serif;
-    }
+      a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
 
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
+      header.without-description {
+        background-color: transparent; /* هدر شفاف */
+        text-align: center;
+        padding: 20px 0;
+      }
 
-    a:hover { text-decoration: underline; }
+      /* دکمه GitHub LTR */
+      .view {
+        direction: ltr;
+        margin-top: 10px;
+      }
 
-    .downloads img {
-      margin: 5px 0 15px 0;
-    }
+      .downloads img { margin: 5px 0 15px 0; }
 
-    .fade-in { animation: fadeIn 2s ease-in-out; }
+      .fade-in { animation: fadeIn 2s ease-in-out; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
 
-    .card {
-      background: white;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
+  <body class="fade-in">
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Ali's homepage</h1>
+        <p class="view">
+          <a href="https://github.com/Ali5859/Ali5859.github.io">View the Project on GitHub</a>
+        </p>
+      </header>
 
-    .card:hover { transform: translateY(-4px); }
+      <section>
+        <h1>خوش اومدید</h1>
 
-  </style>
-</head>
-<body class="fade-in">
+        <h2>خیلی خیلی ممنونم از اینکه وقت میزارید برای خوندن کلمات بعدی این متن.</h2>
 
-  <h1 class="header-ltr">Ali's homepage</h1>
+        <h3>اینجا لیستی از منابعی که برای علوم شناختی به فرمت متن-باز (قابل ادیت توسط همه) هست رو آوردم و اپلیکیشن‌ها و نرم‌افزارهایی که برای تمرین بهتر این مفاهیم می‌سازیم رو لیست می‌کنم. تکمیل میشود...</h3>
 
-  <h2>خیلی خیلی ممنونم از اینکه وقت میزارید برای خوندن کلمات بعدی این متن.</h2>
+        <h3>اول اینو بگم هر ریپازیتوری که لینکش در پایین هست برای دانلود فایل خروجیش به بخش Release در قسمت راست صفحه می‌روید و اونجا فایل رو دانلود می‌کنید.</h3>
 
-  <h3>اینجا لیستی از منابعی که برای علوم شناختی به فرمت متن-باز (قابل ادیت توسط همه) هست رو آوردم و اپلیکیشن‌ها و نرم‌افزارهایی که برای تمرین بهتر این مفاهیم می‌سازیم رو لیست می‌کنم. تکمیل میشود...</h3>
+        <h3>در مورد git هم یه آموزش رایگان ۲ ساعته فرادرس هست که کلا نیم ساعتش به دردمون می‌خوره. اونو یا هر چی دیگه دوست داشتید ببینید. چون گیت الان برای طراحی تسک و سیو داده و خیلی استفاده‌های دیگه واجبه.</h3>
 
-  <h3>اول اینو بگم هر ریپازیتوری که لینکش در پایین هست برای دانلود فایل خروجیش به بخش <b>Release</b> در قسمت راست صفحه می‌روید و اونجا فایل رو دانلود می‌کنید.</h3>
+        <h2>لینک‌ها:</h2>
 
-  <h3>در مورد git هم یه آموزش رایگان ۲ ساعته فرادرس هست که کلا نیم ساعتش به دردمون می‌خوره. اونو یا هر چی دیگه دوست داشتید ببینید. چون گیت الان برای طراحی تسک و سیو داده و خیلی استفاده‌های دیگه واجبه.</h3>
+        <h4><a href="https://github.com/Ali5859/cognitive-science-solutions-and-explanations">
+          جزوات رایگان کتاب‌های کنکور و تحلیل تشریحی سال‌های اخیر
+        </a></h4>
+        <div class="downloads">
+          <img src="https://img.shields.io/github/downloads/Ali5859/cognitive-science-solutions-and-explanations/total" alt="تعداد دانلود ها" />
+        </div>
 
-  <h2>لینک‌ها:</h2>
+        <p>به شدت به همکاری صمیمانه شما و همچنین ستاره دادن به پروژه‌ها، اگر مفید بودن (تا پیشرفت کنن برای سال‌های بعد)، نیازمندیم.</p>
 
-  <div class="card">
-    <h4>
-      <a href="https://github.com/Ali5859/cognitive-science-solutions-and-explanations">
-        جزوات رایگان کتاب‌های کنکور و تحلیل تشریحی سال‌های اخیر
-      </a>
-    </h4>
-    <div class="downloads">
-      <img src="https://img.shields.io/github/downloads/Ali5859/cognitive-science-solutions-and-explanations/total" alt="تعداد دانلود ها" />
+        <h3>این اپلیکیشن رو به زودی در یه پلتفرم منتشر می‌کنیم. برای همه دانشجوها و حتی دبیرستانی‌ها کاربرد فراوووون خواهد داشت.</h3>
+
+        <h4><a href="https://github.com/Ali5859/AI-Engineering-Statistics-Tutor-Eslami">
+          اپلیکیشن آمار، کاربردی برای تقریبا همه رشته‌ها
+        </a></h4>
+        <div class="downloads">
+          <img src="https://img.shields.io/github/downloads/Ali5859/AI-Engineering-Statistics-Tutor-Eslami/total" alt="تعداد دانلود ها" />
+        </div>
+
+        <h3>برای استرنبرگ تمرین با سوال تالیفی و دیدن پیشرفت و سوال‌ها از هر فصل جدا جدا خیلی مهمن. این اپ بهتون این کمک رو می‌کنه.</h3>
+
+        <h4><a href="https://github.com/Ali5859/sternberg-cognitive-psychology-quiz-app">
+          اپلیکیشن استرنبرگ برای تمرین و حل سوالات نامحدود
+        </a></h4>
+        <div class="downloads">
+          <img src="https://img.shields.io/github/downloads/Ali5859/sternberg-cognitive-psychology-quiz-app/total" alt="تعداد دانلود ها" />
+        </div>
+
+        <h4>هر زمان سوالی داشتید به من ایمیل بزنید :))</h4>
+        <a href="mailto:abolhassaneslami@gmail.com">Email</a>
+
+        <h5>صفحه philarchive من</h5>
+        <a href="https://philpeople.org/profiles/abolhassan-ali-eslami/">
+          Ali Eslami Papers and Works Page
+        </a>
+
+        <p>علی</p>
+
+        <p>💖💖💖💖💖</p>
+      </section>
     </div>
-  </div>
 
-  <p>به شدت به همکاری صمیمانه شما و همچنین ستاره دادن به پروژه‌ها، اگر مفید بودن (تا پیشرفت کنن برای سال‌های بعد)، نیازمندیم.</p>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
 
-  <h3>این اپلیکیشن رو به زودی در یه پلتفرم منتشر می‌کنیم. برای همه دانشجوها و حتی دبیرستانی‌ها کاربرد فراوووون خواهد داشت.</h3>
-
-  <div class="card">
-    <h4>
-      <a href="https://github.com/Ali5859/AI-Engineering-Statistics-Tutor-Eslami">
-        اپلیکیشن آمار، کاربردی برای تقریبا همه رشته‌ها
-      </a>
-    </h4>
-    <div class="downloads">
-      <img src="https://img.shields.io/github/downloads/Ali5859/AI-Engineering-Statistics-Tutor-Eslami/total" alt="تعداد دانلود ها" />
-    </div>
-  </div>
-
-  <h3>برای استرنبرگ تمرین با سوال تالیفی و دیدن پیشرفت و سوال‌ها از هر فصل جدا جدا خیلی مهمن. این اپ بهتون این کمک رو می‌کنه.</h3>
-
-  <div class="card">
-    <h4>
-      <a href="https://github.com/Ali5859/sternberg-cognitive-psychology-quiz-app">
-        اپلیکیشن استرنبرگ برای تمرین و حل سوالات نامحدود
-      </a>
-    </h4>
-    <div class="downloads">
-      <img src="https://img.shields.io/github/downloads/Ali5859/sternberg-cognitive-psychology-quiz-app/total" alt="تعداد دانلود ها" />
-    </div>
-  </div>
-
-  <h4>هر زمان سوالی داشتید به من ایمیل بزنید :))</h4>
-  <a href="mailto:abolhassaneslami@gmail.com">Email</a>
-
-  <h5>صفحه philarchive من</h5>
-  <a href="https://philpeople.org/profiles/abolhassan-ali-eslami/">
-    Ali Eslami Papers and Works Page
-  </a>
-
-  <p>علی</p>
-  <p>💖💖💖💖💖</p>
-
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
 </html>
