@@ -7,35 +7,39 @@ title: Ali's homepage
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Ali's homepage</title>
+  <title dir="ltr">Ali's homepage</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
+      font-family: 'Vazirmatn', 'Shabnam', Tahoma, sans-serif;
       margin: 20px;
       line-height: 1.8;
-    }
-    .fade-in {
       animation: fadeIn 2s ease-in-out;
+      background-color: #f8f9fa;
+      color: #222;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+
     h1, h2, h3, h4, h5 {
+      font-family: 'Shabnam', 'Vazirmatn', Tahoma, sans-serif;
       color: #333;
     }
+
     a {
       color: #0366d6;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    a:hover { text-decoration: underline; }
+
+    .fade-in { animation: fadeIn 2s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .downloads img {
-      margin: 5px 0 15px 0;
-    }
+
+    .downloads img { margin: 5px 0 15px 0; }
   </style>
 </head>
+
 <body class="fade-in">
 
   <h1>خوش اومدید</h1>
